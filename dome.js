@@ -55,11 +55,12 @@ var sites = {
 		};
 
 var search = "https://duckduckgo.com/";		// The search engine
-var query  = "q";							// The query variable name for the search engine
+var query  = "q";				// The query variable name for the search engine
 
 var pivotmatch = 0;
 var totallinks = 0;
 var prevregexp = "";
+var openinnew = 0;
 
 // ---------- BUILD PAGE ----------
 function matchLinks(regex = prevregexp) {
@@ -89,8 +90,9 @@ function matchLinks(regex = prevregexp) {
 				link.innerHTML = ln;
 				if (!pivotbuffer++ && regex != "") {
 					link.className = "selected";
-					document.getElementById("action").action = sites[sn][ln];
-					document.getElementById("action").children[0].removeAttribute("name");
+					var actionEl = document.getElementById("action");
+					actionEl.action = sites[sn][ln];
+					actionEl.children[0].removeAttribute("name");
 				}
 				inner.appendChild(link);
 				matches = true;
@@ -110,6 +112,18 @@ function matchLinks(regex = prevregexp) {
 
 document.onkeydown = function(e) {
 	switch (e.keyCode) {
+		case 16:
+			openinnew ^= 1; // toggle open in new tab
+			var actionEl = document.getElementById("action");
+			var displayEl = document.getElementById("shift-state");
+			if(openinnew) {
+				actionEl.setAttribute("target", "_blank");
+				displayEl.innerText = "open in new tab";
+			} else {
+				actionEl.setAttribute("target", "_self");
+				displayEl.innerText = "open here";
+			}
+			break;
 		case 38:
 			pivotmatch = pivotmatch >= 0 ? 0 : pivotmatch + 1;
 			matchLinks();
