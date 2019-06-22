@@ -33,41 +33,24 @@
 
 // div.innerHTML : {a.innerHTML : a.href}
 var sites = {
-			"Chan": {
-				"4/wsg/"			: "https://boards.4chan.org/wsg/",
-				"4/b/"				: "https://boards.4chan.org/b/",
-				"4/sci/"			: "https://boards.4chan.org/sci/",
-				"8/b/"				: "https://8ch.net/b/index.html"
+			"waste time": {
+				"facebook"			: "https://facebook.com",
+				"youtube"			: "https://youtube.com",
+				"tweetdeck"			: "https://tweetdeck.twitter.com",
 			},
-			"Social": {
-				"GitLab"			: "https://gitlab.com/Capuno",
-				"Racó Català"		: "https://www.racocatala.cat/forums",
-				"YouTube"			: "https://www.youtube.com/",
-				"Twitter"			: "https://twitter.com/"
+			"computer": {
+				"github"			: "https://github.com",
+				"heroku"			: "https://dashboard.heroku.com"
 			},
-			"E-Mail": {
-				"GMail"				: "https://mail.google.com/mail/u/0/",
-				"Hotmail"			: "https://outlook.live.com/owa/",
-				"Zoho Mail"			: "https://mail.zoho.eu/zm/#mail/folder/inbox"
+			"reddit": {
+				"reddit"			: "https://reddit.com",
+				"/r/archlinux"			: "https://reddit.com/r/archlinux",
+				"/r/unixporn"			: "https://reddit.com/r/unixporn",
+				"/r/unimelb"			: "https://reddit.com/r/unimelb"
 			},
-			"Games": { // To find the game ID check the url in the store page or the community page
-				"CS:GO"				: "steam://run/730",
-				"Besiege"			: "steam://run/346010",
-				"Rust"				: "steam://run/252490",
-				"Insurgency"		: "steam://run/222880",
-				"West of Loathing"	: "steam://run/597220",
-				"POSTAL 2"			: "steam://run/223470"
-			},
-			"News": {
-				"Financial Times"	: "https://www.ft.com/",
-				"Vilaweb"			: "https://www.vilaweb.cat/",
-				"El Punt Avui"		: "http://www.elpuntavui.cat/barcelona.html"
-			},
-			"My stuff": {
-				"capuno.cat"		: "https://capuno.cat/",
-				"gnu.cat"			: "https://gnu.cat/",
-				"life"				: "https://life.capuno.cat/",
-				"rice"				: "https://rice.capuno.cat/"
+			"other": {
+				"unimelb lms"			: "https://app.lms.unimelb.edu.au",
+				"colour picker"			: "https://duckduckgo.com/?q=color+picker&t=ffab&ia=answer"
 			}
 		};
 

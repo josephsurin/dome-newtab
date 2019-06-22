@@ -1,11 +1,11 @@
 :root {
-	--hdr: #1B2924;		/* Header Background Color */
-	--bkg: #121B18;		/* Background Color - Also located inside index.html <style> hard-coded */
-	--frg: #23352F;		/* Foreground Color */
-	--hgl: #00CC66;		/* Highlight Color */
+	--hdr: #20232b;		/* Header Background Color */
+	--bkg: #2f343f;		/* Background Color - Also located inside index.html <style> hard-coded */
+	--frg: #272a33;		/* Foreground Color */
+	--hgl: #72c8ea;		/* Highlight Color */
 
 	--htx: #666;		/* Header Text Color */
-	--txt: #CCC;		/* Text Color */
+	--txt: #aaa;		/* Text Color */
 }
 
 @font-face {
@@ -56,7 +56,8 @@ body > div#main > span > div#static_links {
 }
 
 body > div#main > span > div#static_links > span#clock {
-	margin-right: 15px;
+	position: absolute;
+	right: 12px;
 }
 
 body > div#main > span > div#static_links > span:first-of-type {
