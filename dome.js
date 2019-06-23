@@ -50,7 +50,7 @@ var sites = {
 			},
 			"other": {
 				"unimelb lms"			: "https://app.lms.unimelb.edu.au",
-				"colour picker"			: "https://duckduckgo.com/?q=color+picker&t=ffab&ia=answer"
+				"colour picker"			: "https://josephsurin.github.io/colour-picker/"
 			}
 		};
 
